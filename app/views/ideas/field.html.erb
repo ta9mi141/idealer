@@ -1,0 +1,26 @@
+<h1>Idea field</h1>
+<div class="row">
+    <div class="col-md-8">
+        <% if @user.ideas.any? %>
+            <h3>Ideas (<%= @user.ideas.count %>)</h3>
+            <ul class="ideas">
+                <%= render @idea %>
+            </ul>
+        <% end %>
+    </div>
+</div>
+
+<h1>Add new idea</h1>
+<div class="row">
+    <%= form_for(@new_idea) do |f| %>
+        <%= render 'shared/error_messages', object: f.object %>
+        <div class="field">
+            <%= f.label :content %>
+            <%= f.text_area :content, placeholder: "Add your idea..." %>
+
+            <%= f.label :suit %>
+            <%= f.text_field :suit, placeholder: "Add your idea's suit..." %>
+        </div>
+        <%= f.submit "Post", class: "btn btn-primary" %>
+    <% end %>
+</div>

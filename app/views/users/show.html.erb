@@ -1,3 +1,7 @@
 <%= @user.name %>, <%= @user.email %>
 <%= link_to "Log out", logout_path, method: "delete",  class: "btn btn-lg btn-primary" %>
 <%= link_to "Settings", edit_user_path(current_user), class: "btn btn-lg btn-primary" %>
+
+<div class="center jumbotron">
+    <%= link_to "Get new idea!", field_path, class: "btn btn-lg btn-primary" %>
+</div>
