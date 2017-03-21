@@ -1,4 +1,10 @@
 <h1>Idea field</h1>
+
+<h1> <a data-target="con12" class="modal-open">blankcard</a></h1>
+
+<div calss ="deck">
+  test
+</div>
 <div class="row">
     <div class="col-md-8">
         <% if @user.ideas.any? %>
@@ -10,7 +16,11 @@
     </div>
 </div>
 
-<h1>Add new idea</h1>
+
+<!--モーダル内-->
+<div id="con12" class="modal-content">
+  <p><a class="modal-close">閉じる</a></p>
+
 <div class="row">
     <%= form_for(@new_idea) do |f| %>
         <%= render 'shared/error_messages', object: f.object %>
@@ -23,4 +33,5 @@
         </div>
         <%= f.submit "Post", class: "btn btn-primary" %>
     <% end %>
+</div>
 </div>

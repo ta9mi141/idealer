@@ -1,0 +1,87 @@
+.topbar{
+  width:100%; height:50px;
+  background: #a30f01;
+}
+
+.button-box{
+  width:120px; height:240px;
+  float: left;
+  background: #fff;
+  margin: 10px;
+}
+
+.card-box1{
+  width:95%; height:50%;
+  margin: 0 ;
+}
+
+.card-box2{
+  width:95%; height:50%;
+  margin: 0 ;
+}
+
+.deck {
+  width: 150px; height: 225px;
+  margin: 10px;
+  border-radius:4px;
+  background: #e84b43;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.22);
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.22);
+  border-radius: 4px;
+  border:10px solid #fff;
+  overflow:hidden;
+  float: left;
+}
+
+
+.card {
+  width: 150px; height: 225px;
+  margin: 10px;
+  border-radius:4px;
+  background: #fff;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.22);
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.22);
+  border-radius: 4px;
+  border:10px solid #595858;
+  overflow:hidden;
+  float: left;
+}
+
+.blankcard{
+  width: 150px; height: 225px;
+  margin: 10px;
+  border-radius:4px;
+  background: #fff;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.22);
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.22);
+  border-radius: 4px;
+  border:10px solid #595858;
+  overflow:hidden;
+  float: left;
+  position:absolute;
+  left:40%;
+  top:25%;
+}
+
+.zone{
+  width: 165px; height: 240px;
+  margin: 10px;
+  border-radius:4px;
+  background: #016847;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.22);
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.22);
+  border-width:5px 5px 0 0 ;
+  border-style:solid;
+  border-color:#00563b;
+  overflow:hidden;
+  float: left;
+}
+
+.mark{
+  height:30px;width: 30px;
+  font-size: xx-large
+}
+
+.noteleaf{
+  height:150px;
+}
