@@ -3,7 +3,8 @@ class IdeasController < ApplicationController
 
   def field
     @user = User.find(session[:user_id])
-    @idea = @user.ideas
+    @idea4js = Array.new
+    @user.ideas.sort_by{rand}.each {|idea| @idea4js.push(Array.new.push(idea[:content]).push(idea[:suit]))}
     @new_idea = current_user.ideas.build
   end
 
@@ -14,7 +15,8 @@ class IdeasController < ApplicationController
       redirect_to field_url
     else
       @user = User.find(session[:user_id])
-      @idea = @user.ideas
+      @idea4js = Array.new
+      @user.ideas.sort_by{rand}.each {|idea| @idea4js.push(Array.new.push(idea[:content]).push(idea[:suit]))}
       render 'field'
     end
   end

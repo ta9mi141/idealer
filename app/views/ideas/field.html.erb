@@ -9,9 +9,10 @@
     <div class="col-md-8">
         <% if @user.ideas.any? %>
             <h3>Ideas (<%= @user.ideas.count %>)</h3>
-            <ul class="ideas">
-                <%= render @idea %>
-            </ul>
+            <script>
+             var ideas = <%= @idea4js.to_json.html_safe %>;
+             console.log(ideas);
+            </script>
         <% end %>
     </div>
 </div>
