@@ -1,10 +1,47 @@
 <h1>Idea field</h1>
 
-<h1> <a data-target="con12" class="modal-open">blankcard</a></h1>
-
-<div calss ="deck">
-  test
+<!--ここから背景絵-->
+  <div class="card-box">
+  <div class="deck">
+    山札
+    <p> <a data-target="con12" class="modal-open">blankcard</a></p>
+    <p><a data-target="con11" class="modal-open">[deck_make]</a></p>
+  </div>
+  <div  class="zone">
+    zone1
+  </div>
+  <div class="zone">
+    zone2
+  </div>
+  <div class="zone">
+    zone3
+  </div>
+  <div class="zone">
+    zone4
+  </div>
+  <div  id=openplace0 style="clear:both;" class="zone">
+    zone0
+    <input type="button" value="ドロー" onclick="CardDraw0();"/>
+  </div>
+  <div id="openplace1" class="zone">
+    zone0
+   <input type="button" value="ドロー" onclick="CardDraw1();"/>
+  </div>
+  <div id="openplace2" class="zone">
+   zone0
+   <input type="button" value="ドロー" onclick="CardDraw2();"/>
+  </div>
+  <div id="openplace3" class="zone">
+   zone0
+   <input type="button" value="ドロー" onclick="CardDraw3();"/>
+  </div>
+  <div id="openplace4" class="zone">
+   zone0
+   <input type="button" value="ドロー" onclick="CardDraw4();"/>
+  </div>
 </div>
+<!--ここまで背景絵-->
+
 <div class="row">
     <div class="col-md-8">
         <% if @user.ideas.any? %>
