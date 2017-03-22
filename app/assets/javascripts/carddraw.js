@@ -4,7 +4,6 @@ var i = 0;
 function CardDraw0(){
   $("#openplace0").replaceWith('<div id="ideacard0" class="card"><div class="mark">'+ ideas[i][1]+'</div><div class="noteleaf">'+ideas[i][0]+'</div></div>');
   return i++;
-  $(".card").draggable();
 };
 function CardDraw1(){
   $("#openplace1").replaceWith('<div id="ideacard1" class="card"><div class="mark">'+ideas[i][1]+'</div><div class="noteleaf">'+ideas[i][0]+"</div></div>");
