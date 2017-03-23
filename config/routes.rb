@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   delete '/logout', to: 'sessions#destroy'
   get '/field', to: 'ideas#field'
   post '/field', to: 'ideas#create'
+  post '/deck_make', to: 'ideas#deck_make'
   resources :users
   resources :ideas, only: [:create]
 

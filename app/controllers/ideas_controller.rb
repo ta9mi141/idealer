@@ -6,6 +6,7 @@ class IdeasController < ApplicationController
     @idea4js = Array.new
     @user.ideas.sort_by{rand}.each {|idea| @idea4js.push(Array.new.push(idea[:content]).push(idea[:suit]))}
     @new_idea = current_user.ideas.build
+    @suits = @user.ideas.pluck(:suit).uniq
   end
 
   def create
@@ -19,6 +20,15 @@ class IdeasController < ApplicationController
       @user.ideas.sort_by{rand}.each {|idea| @idea4js.push(Array.new.push(idea[:content]).push(idea[:suit]))}
       render 'field'
     end
+  end
+
+  def deck_make
+    @user = User.find(session[:user_id])
+    @idea4js = Array.new
+    @user.ideas.where(suit: params[:deck_config].keys.to_a).sort_by{rand}.each {|idea| @idea4js.push(Array.new.push(idea[:content]).push(idea[:suit]))}
+    @new_idea = current_user.ideas.build
+    @suits = @user.ideas.pluck(:suit).uniq
+    render 'field'
   end
 
 

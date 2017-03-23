@@ -73,3 +73,17 @@
     <% end %>
 </div>
 </div>
+
+<!-- deck-make -->
+<div id="con11" class="modal-content">
+<p><a class="modal-close">close</a></p>
+
+    <div class="row">
+        <%= form_tag("/deck_make", method: 'post') do %>
+            <% @suits.each do |suit| %>
+                <%= suit %>: <%= check_box_tag("deck_config[#{suit}]") %>
+            <% end %>
+            <%= submit_tag("Apply") %>
+        <% end %>
+    </div>
+</div>
