@@ -2,7 +2,7 @@
 var i = 0;
 
 function CardDraw0(){
-  $("#openplace0").replaceWith('<div id="ideacard0" class="card"><div class="mark">'+ ideas[i][1]+'</div><div class="noteleaf">'+ideas[i][0]+'</div></div>');
+$("#openplace0").replaceWith('<div id="ideacard0" class="card"><div class="mark">'+ ideas[i][1]+'</div><div class="noteleaf">'+ideas[i][0]+'</div></div>');
   return i++;
 };
 function CardDraw1(){
@@ -14,7 +14,7 @@ function CardDraw2(){
   return i++
 };
 function CardDraw3(){
-  $("#openplace3").replaceWith('<div id="ideacard3" class="card"><div class="mark">'+ideas[i][1]+'</div><div class="noteleaf">'+ideas[i][0]+"</div></div>");
+ $("#openplace3").replaceWith('<div id="ideacard3" class="card"><div class="mark">'+ideas[i][1]+'</div><div class="noteleaf">'+ideas[i][0]+"</div></div>");
   return i++
 };
 function CardDraw4(){
@@ -39,3 +39,5 @@ function discard3(){
 function discard4(){
   $("#ideacard4").replaceWith('<div  id=openplace4>zone0</div>')
 }
+
+document.write('<div id="ideacard4" class="card"><div class="mark">'+ideas[i][1]+'</div><div class="noteleaf">'+ideas[i][0]+"</div></div>");
