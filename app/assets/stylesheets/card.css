@@ -45,6 +45,7 @@
   border:10px solid #595858;
   overflow:hidden;
   float: left;
+  z-index: 2;
 }
 
 .blankcard{
@@ -64,7 +65,7 @@
 }
 
 .zone{
-  width: 165px; height: 240px;
+  width: 165px; height: 280px;
   margin: 10px;
   border-radius:4px;
   background: #016847;
@@ -75,6 +76,8 @@
   border-color:#00563b;
   overflow:hidden;
   float: left;
+  z-index: 0;
+
 }
 
 .mark{

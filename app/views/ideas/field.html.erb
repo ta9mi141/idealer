@@ -1,46 +1,5 @@
 <h1>Idea field</h1>
 
-<!--ここから背景絵-->
-  <div class="card-box">
-  <div class="deck">
-    山札
-    <p> <a data-target="con12" class="modal-open">blankcard</a></p>
-    <p><a data-target="con11" class="modal-open">[deck_make]</a></p>
-  </div>
-  <div  class="zone">
-    zone1
-  </div>
-  <div class="zone">
-    zone2
-  </div>
-  <div class="zone">
-    zone3
-  </div>
-  <div class="zone">
-    zone4
-  </div>
-  <div  id=openplace0 style="clear:both;" class="zone">
-    zone0
-    <input type="button" value="ドロー" onclick="CardDraw0();"/>
-  </div>
-  <div id="openplace1" class="zone">
-    zone0
-   <input type="button" value="ドロー" onclick="CardDraw1();"/>
-  </div>
-  <div id="openplace2" class="zone">
-   zone0
-   <input type="button" value="ドロー" onclick="CardDraw2();"/>
-  </div>
-  <div id="openplace3" class="zone">
-   zone0
-   <input type="button" value="ドロー" onclick="CardDraw3();"/>
-  </div>
-  <div id="openplace4" class="zone">
-   zone0
-   <input type="button" value="ドロー" onclick="CardDraw4();"/>
-  </div>
-</div>
-<!--ここまで背景絵-->
 
 <div class="row">
     <div class="col-md-8">
@@ -54,7 +13,62 @@
     </div>
 </div>
 
+<!--ここから背景絵-->
+<div class="card-box">
+<div  class="zone">
+  <div class="deck">
+    DECK
+    <p> <a data-target="con12" class="modal-open">blankcard</a></p>
+    <p><a data-target="con11" class="modal-open">[deck_make]</a></p>
+  </div>
+</div>
+  <div class="zone">
+    zone1
+  </div>
+  <div class="zone">
+    zone2
+  </div>
+  <div class="zone">
+    zone3
+  </div>
+  <div class="zone">
+    zone4
+  </div>
+  <div style="clear:both;" class="zone">
+    <input type="button" value="DRAW" onclick="CardDraw0();"/>
+    <input type="button" value="DISCARD" onclick="discard0();">
+    <div  id=openplace0>  zone0  </div>
+  </div>
+  <div class="zone">
+    <input type="button" value="DRAW"  onclick="CardDraw1();"/>
+    <input type="button" value="DISCARD" onclick="discard1();">
+    <div  id=openplace1>  zone0  </div>
+  </div>
+  <div  class="zone">
+ <input type="button" value="DRAW"  onclick="CardDraw2();"/>
+ <input type="button" value="DISCARD" onclick="discard2();">
+    <div  id=openplace2>  zone0  </div>
+  </div>
+  <div  class="zone">
+ <input type="button" value="DRAW"  onclick="CardDraw3();"/>
+ <input type="button" value="DISCARD" onclick="discard3();">
+    <div  id=openplace3>  zone0  </div>
+  </div>
+  <div class="zone">
+ <input type="button" value="DRAW" onclick="CardDraw4();"/>
+ <input type="button" value="DISCARD" onclick="discard4();">
+    <div  id=openplace4>  zone0  </div>
+  </div>
+</div>
 
+  <div class="card">
+    <div class="mark">S</div>
+    <div class="noteleaf">
+      idea
+    </div>
+  </div>
+</div>
+<!--ここまで背景絵-->
 <!--モーダル内-->
 <div id="con12" class="modal-content">
   <p><a class="modal-close">閉じる</a></p>
