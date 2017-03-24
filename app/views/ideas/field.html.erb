@@ -4,10 +4,9 @@
 <div class="row">
     <div class="col-md-8">
         <% if @user.ideas.any? %>
-            <h3>Ideas (<%= @user.ideas.count %>)</h3>
+            <h3>You have <%= pluralize(@user.ideas.count, "idea") %></h3>
             <script>
              var ideas = <%= @idea4js.to_json.html_safe %>;
-             console.log(ideas);
             </script>
         <% end %>
     </div>
@@ -17,9 +16,9 @@
 <div class="card-box">
 <div  class="zone">
   <div class="deck">
-    DECK
-    <p> <a data-target="con12" class="modal-open">blankcard</a></p>
-    <p><a data-target="con11" class="modal-open">[deck_make]</a></p>
+      <p style="text-align:center">DECK</p>
+      <p style="text-align:center"><a data-target="con12" class="modal-open">blankcard</a></p>
+      <p style="text-align:center"><a data-target="con11" class="modal-open">deck_make</a></p>
   </div>
 </div>
   <div class="zone">
@@ -61,6 +60,7 @@
   </div>
 </div>
 
+<!--
   <div class="card">
     <div class="mark">S</div>
     <div class="noteleaf">
@@ -68,10 +68,12 @@
     </div>
   </div>
 </div>
+-->
+
 <!--ここまで背景絵-->
 <!--モーダル内-->
 <div id="con12" class="modal-content">
-  <p><a class="modal-close">閉じる</a></p>
+  <p><a class="modal-close">close</a></p>
 
 <div class="row">
     <%= form_for(@new_idea) do |f| %>
@@ -95,7 +97,9 @@
     <div class="row">
         <%= form_tag("/deck_make", method: 'post') do %>
             <% @suits.each do |suit| %>
-                <%= suit %>: <%= check_box_tag("deck_config[#{suit}]") %>
+                <div class="checkbox">
+                    <label><%= check_box_tag("deck_config[#{suit}]") %><%= suit %></label> 
+                </div>
             <% end %>
             <%= submit_tag("Apply") %>
         <% end %>

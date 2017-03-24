@@ -2,23 +2,23 @@
 var i = 0;
 
 function CardDraw0(){
-$("#openplace0").replaceWith('<div id="ideacard0" class="card"><div class="mark">'+ ideas[i][1]+'</div><div class="noteleaf">'+ideas[i][0]+'</div></div>');
+$("#openplace0").replaceWith('<div id="ideacard0" class="card"><div class="mark">'+ ideas[i][1]+'</div><div class="noteleaf">'+'<p></p>' + ideas[i][0]+'</div></div>');
   return i++;
 };
 function CardDraw1(){
-  $("#openplace1").replaceWith('<div id="ideacard1" class="card"><div class="mark">'+ideas[i][1]+'</div><div class="noteleaf">'+ideas[i][0]+"</div></div>");
+    $("#openplace1").replaceWith('<div id="ideacard1" class="card"><div class="mark">'+ideas[i][1]+'</div><div class="noteleaf">'+'<p></p>' +ideas[i][0]+"</div></div>");
   return i++
 };
 function CardDraw2(){
-  $("#openplace2").replaceWith('<div id="ideacard2" class="card"><div class="mark">'+ideas[i][1]+'</div><div class="noteleaf">'+ideas[i][0]+"</div></div>");
+    $("#openplace2").replaceWith('<div id="ideacard2" class="card"><div class="mark">'+ideas[i][1]+'</div><div class="noteleaf">'+'<p></p>' +ideas[i][0]+"</div></div>");
   return i++
 };
 function CardDraw3(){
- $("#openplace3").replaceWith('<div id="ideacard3" class="card"><div class="mark">'+ideas[i][1]+'</div><div class="noteleaf">'+ideas[i][0]+"</div></div>");
+    $("#openplace3").replaceWith('<div id="ideacard3" class="card"><div class="mark">'+ideas[i][1]+'</div><div class="noteleaf">'+'<p></p>' +ideas[i][0]+"</div></div>");
   return i++
 };
 function CardDraw4(){
-  $("#openplace4").replaceWith('<div id="ideacard4" class="card"><div class="mark">'+ideas[i][1]+'</div><div class="noteleaf">'+ideas[i][0]+"</div></div>");
+    $("#openplace4").replaceWith('<div id="ideacard4" class="card"><div class="mark">'+ideas[i][1]+'</div><div class="noteleaf">'+'<p></p>' +ideas[i][0]+"</div></div>");
   return i++
 };
 //<!--ドローボタン-->
