@@ -95,7 +95,7 @@ GEM
     nokogiri (1.7.1)
       mini_portile2 (~> 2.1.0)
     pg (0.18.4)
-    puma (3.8.2)
+    puma (3.12.4)
     rack (2.0.1)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -189,7 +189,7 @@ DEPENDENCIES
   listen (~> 3.0.5)
   minitest-reporters (= 1.1.9)
   pg (= 0.18.4)
-  puma (~> 3.0)
+  puma (~> 3.12)
   rails (~> 5.0.0, >= 5.0.0.1)
   rails-controller-testing (= 0.1.1)
   rails_12factor
